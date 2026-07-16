@@ -32,7 +32,8 @@ test("server-renders the volleyball development site", async () => {
 
   const html = await response.text();
   assert.match(html, /Spirit Volleyball Edmonton/i);
-  assert.match(html, /Beginner program for girls ages 9-12/i);
+  assert.match(html, /Upcoming beginner program for girls ages 10-12/i);
+  assert.match(html, /volleyballgirls2026@gmail\.com/i);
   assert.match(html, /Build skills, confidence, and friendships/i);
   assert.match(html, /Kyntrix Technology Solutions Ltd\./i);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);
@@ -46,7 +47,7 @@ test("keeps starter preview files out of the finished site", async () => {
   ]);
 
   assert.match(page, /volleyball-hero\.png/);
-  assert.match(layout, /Spirit Volleyball Edmonton \| Ages 9-12/);
+  assert.match(layout, /Spirit Volleyball Edmonton \| Ages 10-12/);
   assert.doesNotMatch(page + layout + packageJson, /codex-preview|SkeletonPreview|react-loading-skeleton/);
 
   await assert.rejects(access(new URL("app/_sites-preview", templateRoot)));

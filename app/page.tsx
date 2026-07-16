@@ -48,7 +48,7 @@ export default function Home() {
         </nav>
 
         <div className="heroContent">
-          <p className="eyebrow">Beginner program for girls ages 9-12</p>
+          <p className="eyebrow">Upcoming beginner program for girls ages 10-12</p>
           <h1>Build skills, confidence, and friendships through volleyball.</h1>
           <p className="heroLead">
             A welcoming Spirit Volleyball Edmonton program focused on fundamentals,
@@ -67,7 +67,7 @@ export default function Home() {
 
       <section className="introBand" aria-label="Program summary">
         <div>
-          <span className="stat">9-12</span>
+          <span className="stat">10-12</span>
           <span className="statLabel">Age group</span>
         </div>
         <div>
@@ -149,8 +149,8 @@ export default function Home() {
               Personal information collected through the form will be used only
               for this volleyball program and will be kept confidential.
             </p>
-            <a className="button primary full" href="mailto:info@example.com?subject=Girls%20Volleyball%20Development%20Program">
-              Contact program organizer
+            <a className="button primary full" href="mailto:volleyballgirls2026@gmail.com?subject=Spirit%20Volleyball%20Edmonton%20Program">
+              Email program organizer
             </a>
           </div>
         </div>
