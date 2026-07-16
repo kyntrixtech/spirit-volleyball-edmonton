@@ -36,9 +36,9 @@ export default function Home() {
         />
         <div className="heroShade" />
         <nav className="nav" aria-label="Primary navigation">
-          <a className="brand" href="#top" aria-label="Girls Volleyball Development home">
+          <a className="brand" href="#top" aria-label="Spirit Volleyball Edmonton home">
             <span className="brandMark">V</span>
-            <span>Girls Volleyball Development</span>
+            <span>Spirit Volleyball Edmonton</span>
           </a>
           <div className="navLinks">
             <a href="#program">Program</a>
@@ -51,7 +51,7 @@ export default function Home() {
           <p className="eyebrow">Beginner program for girls ages 9-12</p>
           <h1>Build skills, confidence, and friendships through volleyball.</h1>
           <p className="heroLead">
-            A welcoming girls' development program focused on fundamentals,
+            A welcoming Spirit Volleyball Edmonton program focused on fundamentals,
             teamwork, communication, and joy in movement.
           </p>
           <div className="heroActions">

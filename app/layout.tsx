@@ -13,18 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Girls Volleyball Development | Ages 9-12",
+  title: "Spirit Volleyball Edmonton | Ages 9-12",
   description:
     "A supportive beginner volleyball development program helping girls ages 9-12 build skills, confidence, teamwork, and friendships.",
   openGraph: {
-    title: "Girls Volleyball Development | Ages 9-12",
+    title: "Spirit Volleyball Edmonton | Ages 9-12",
     description:
       "Beginner volleyball development for girls ages 9-12 in a fun, supportive environment.",
     images: ["/volleyball-hero.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Girls Volleyball Development | Ages 9-12",
+    title: "Spirit Volleyball Edmonton | Ages 9-12",
     description:
       "Build skills, confidence, and friendships through volleyball.",
     images: ["/volleyball-hero.png"],
