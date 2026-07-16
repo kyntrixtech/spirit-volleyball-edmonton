@@ -28,7 +28,7 @@ export default function Home() {
       <section className="hero" id="top">
         <Image
           src="/volleyball-hero.png"
-          alt="Girls practicing volleyball with a coach in a bright indoor gym"
+          alt="Girls playing volleyball near the net in an indoor gym"
           fill
           priority
           sizes="100vw"
