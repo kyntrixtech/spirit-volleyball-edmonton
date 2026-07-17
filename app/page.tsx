@@ -33,21 +33,22 @@ const volleyballSkills = [
 
 const coaches = [
   {
-    name: "Nancy",
-    role: "Head Coach",
-    image: "/coach-nancy.png",
-    bio: "Lead. Inspire. Empower. Nancy guides players with a focus on skill, teamwork, confidence, and passion for the game.",
-  },
-  {
     name: "Esther",
-    role: "Assistant Coach",
+    role: "Head Coach",
     image: "/coach-esther.png",
     bio: "Esther brings energy, patience, and a player-first approach to helping athletes build skill, teamwork, and confidence.",
   },
   {
-    name: "Coach 3",
-    role: "Assistant Coach",
-    bio: "Profile coming soon.",
+    name: "Nancy",
+    role: "Coach",
+    image: "/coach-nancy.png",
+    bio: "Lead. Inspire. Empower. Nancy guides players with a focus on skill, teamwork, confidence, and passion for the game.",
+  },
+  {
+    name: "Melody",
+    role: "Coach",
+    image: "/coach-melody.png",
+    bio: "Melody helps players grow with encouragement, strong fundamentals, teamwork, and passion for volleyball.",
   },
 ];
 

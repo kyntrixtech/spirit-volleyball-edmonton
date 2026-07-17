@@ -47,11 +47,12 @@ test("server-renders the volleyball development site", async () => {
   assert.match(html, /two instalments/i);
   assert.match(html, /Coaching Team/i);
   assert.match(html, /Head Coach/i);
-  assert.match(html, /Nancy/i);
-  assert.match(html, /coach-nancy\.png/i);
   assert.match(html, /Esther/i);
   assert.match(html, /coach-esther\.png/i);
-  assert.match(html, /Assistant Coach/i);
+  assert.match(html, /Nancy/i);
+  assert.match(html, /coach-nancy\.png/i);
+  assert.match(html, /Melody/i);
+  assert.match(html, /coach-melody\.png/i);
   assert.match(html, /Build skills, confidence, and friendships/i);
   assert.match(html, /Kyntrix Technology Solutions Ltd\./i);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);
@@ -68,6 +69,7 @@ test("keeps starter preview files out of the finished site", async () => {
   assert.match(page, /spirit-volleyball-logo\.png/);
   assert.match(page, /coach-nancy\.png/);
   assert.match(page, /coach-esther\.png/);
+  assert.match(page, /coach-melody\.png/);
   assert.match(layout, /Spirit Volleyball Edmonton \| Ages 10-12/);
   assert.doesNotMatch(page + layout + packageJson, /codex-preview|SkeletonPreview|react-loading-skeleton/);
 
