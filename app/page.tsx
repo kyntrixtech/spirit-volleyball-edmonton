@@ -39,9 +39,10 @@ const coaches = [
     bio: "Lead. Inspire. Empower. Nancy guides players with a focus on skill, teamwork, confidence, and passion for the game.",
   },
   {
-    name: "Coach 2",
+    name: "Esther",
     role: "Assistant Coach",
-    bio: "Profile coming soon.",
+    image: "/coach-esther.png",
+    bio: "Esther brings energy, patience, and a player-first approach to helping athletes build skill, teamwork, and confidence.",
   },
   {
     name: "Coach 3",
@@ -190,7 +191,7 @@ export default function Home() {
               {coach.image ? (
                 <Image
                   src={coach.image}
-                  alt="Head Coach Nancy"
+                  alt={`${coach.role} ${coach.name}`}
                   width={768}
                   height={512}
                   className="coachPhoto"
