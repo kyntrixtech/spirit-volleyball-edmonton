@@ -96,7 +96,7 @@ export default function Home() {
               className="button primary"
               href="https://forms.cloud.microsoft/r/vjf6Kp2SpV"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Register now
             </a>
@@ -219,7 +219,7 @@ export default function Home() {
             <h2>Help us organize a safe, supportive program.</h2>
             <p>
               The registration form collects the information needed to plan
-              groups, communicate with families, and understand each child's
+              groups, communicate with families, and understand each child&apos;s
               needs. Required questions help us deliver the program effectively;
               optional questions can be completed when they apply.
             </p>
@@ -243,7 +243,7 @@ export default function Home() {
               className="button primary full"
               href="https://forms.cloud.microsoft/r/vjf6Kp2SpV"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Complete registration form
             </a>

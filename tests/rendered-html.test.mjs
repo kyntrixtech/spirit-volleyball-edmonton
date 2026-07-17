@@ -29,11 +29,22 @@ test("server-renders the volleyball development site", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+  assert.equal(response.headers.get("x-content-type-options"), "nosniff");
+  assert.equal(response.headers.get("x-frame-options"), "SAMEORIGIN");
+  assert.equal(
+    response.headers.get("referrer-policy"),
+    "strict-origin-when-cross-origin",
+  );
+  assert.match(
+    response.headers.get("permissions-policy") ?? "",
+    /camera=\(\), microphone=\(\), geolocation=\(\), payment=\(\)/,
+  );
 
   const html = await response.text();
   assert.match(html, /Spirit Volleyball Edmonton/i);
   assert.match(html, /Upcoming beginner program for girls ages 10-12/i);
   assert.match(html, /https:\/\/forms\.cloud\.microsoft\/r\/vjf6Kp2SpV/i);
+  assert.match(html, /rel="noopener noreferrer"/i);
   assert.match(html, /volleyballgirls2026@gmail\.com/i);
   assert.match(html, /Serving/i);
   assert.match(html, /Passing/i);
