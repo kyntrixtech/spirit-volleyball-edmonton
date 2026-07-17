@@ -58,6 +58,7 @@ test("keeps starter preview files out of the finished site", async () => {
   ]);
 
   assert.match(page, /volleyball-hero\.png/);
+  assert.match(page, /spirit-volleyball-logo\.png/);
   assert.match(layout, /Spirit Volleyball Edmonton \| Ages 10-12/);
   assert.doesNotMatch(page + layout + packageJson, /codex-preview|SkeletonPreview|react-loading-skeleton/);
 

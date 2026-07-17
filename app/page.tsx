@@ -46,7 +46,13 @@ export default function Home() {
         <div className="heroShade" />
         <nav className="nav" aria-label="Primary navigation">
           <a className="brand" href="#top" aria-label="Spirit Volleyball Edmonton home">
-            <span className="brandMark">V</span>
+            <Image
+              src="/spirit-volleyball-logo.png"
+              alt=""
+              width={64}
+              height={64}
+              className="brandLogo"
+            />
             <span>Spirit Volleyball Edmonton</span>
           </a>
           <div className="navLinks">
