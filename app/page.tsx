@@ -31,6 +31,25 @@ const volleyballSkills = [
   "Team communication",
 ];
 
+const coaches = [
+  {
+    name: "Nancy",
+    role: "Head Coach",
+    image: "/coach-nancy.png",
+    bio: "Lead. Inspire. Empower. Nancy guides players with a focus on skill, teamwork, confidence, and passion for the game.",
+  },
+  {
+    name: "Coach 2",
+    role: "Assistant Coach",
+    bio: "Profile coming soon.",
+  },
+  {
+    name: "Coach 3",
+    role: "Assistant Coach",
+    bio: "Profile coming soon.",
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -58,6 +77,7 @@ export default function Home() {
           <div className="navLinks">
             <a href="#program">Program</a>
             <a href="#benefits">Benefits</a>
+            <a href="#coaches">Coaches</a>
             <a href="#register">Register</a>
           </div>
         </nav>
@@ -152,6 +172,40 @@ export default function Home() {
         <div className="skillsLearned" aria-label="Volleyball skills learned">
           {volleyballSkills.map((skill) => (
             <span key={skill}>{skill}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="section coachesSection" id="coaches">
+        <div className="sectionHeader">
+          <p className="sectionKicker">Coaching Team</p>
+          <h2>Supportive coaches for every stage of learning.</h2>
+        </div>
+        <div className="coachGrid">
+          {coaches.map((coach) => (
+            <article
+              className={coach.image ? "coachCard featuredCoach" : "coachCard placeholderCoach"}
+              key={coach.name}
+            >
+              {coach.image ? (
+                <Image
+                  src={coach.image}
+                  alt="Head Coach Nancy"
+                  width={768}
+                  height={512}
+                  className="coachPhoto"
+                />
+              ) : (
+                <div className="coachPlaceholder" aria-hidden="true">
+                  <span>{coach.name.slice(-1)}</span>
+                </div>
+              )}
+              <div className="coachInfo">
+                <p className="coachRole">{coach.role}</p>
+                <h3>{coach.name}</h3>
+                <p>{coach.bio}</p>
+              </div>
+            </article>
           ))}
         </div>
       </section>
