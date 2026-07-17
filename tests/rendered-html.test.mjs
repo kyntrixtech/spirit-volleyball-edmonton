@@ -33,6 +33,7 @@ test("server-renders the volleyball development site", async () => {
   const html = await response.text();
   assert.match(html, /Spirit Volleyball Edmonton/i);
   assert.match(html, /Upcoming beginner program for girls ages 10-12/i);
+  assert.match(html, /https:\/\/forms\.cloud\.microsoft\/r\/vjf6Kp2SpV/i);
   assert.match(html, /volleyballgirls2026@gmail\.com/i);
   assert.match(html, /Build skills, confidence, and friendships/i);
   assert.match(html, /Kyntrix Technology Solutions Ltd\./i);

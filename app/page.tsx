@@ -55,8 +55,13 @@ export default function Home() {
             teamwork, communication, and joy in movement.
           </p>
           <div className="heroActions">
-            <a className="button primary" href="#register">
-              Register interest
+            <a
+              className="button primary"
+              href="https://forms.cloud.microsoft/r/vjf6Kp2SpV"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Register now
             </a>
             <a className="button secondary" href="#program">
               Explore program
@@ -149,8 +154,16 @@ export default function Home() {
               Personal information collected through the form will be used only
               for this volleyball program and will be kept confidential.
             </p>
-            <a className="button primary full" href="mailto:volleyballgirls2026@gmail.com?subject=Spirit%20Volleyball%20Edmonton%20Program">
-              Email program organizer
+            <a
+              className="button primary full"
+              href="https://forms.cloud.microsoft/r/vjf6Kp2SpV"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Complete registration form
+            </a>
+            <a className="emailLink" href="mailto:volleyballgirls2026@gmail.com?subject=Spirit%20Volleyball%20Edmonton%20Program">
+              Questions? Email volleyballgirls2026@gmail.com
             </a>
           </div>
         </div>
