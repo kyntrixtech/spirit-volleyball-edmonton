@@ -10,7 +10,7 @@ const benefits = [
 const skillBlocks = [
   {
     title: "Fundamentals First",
-    text: "Passing, serving, setting, footwork, court awareness, and safe movement patterns for new players.",
+    text: "Serving, passing, setting, attacking, footwork, court awareness, and safe movement patterns for new players.",
   },
   {
     title: "Confidence In Motion",
@@ -20,6 +20,15 @@ const skillBlocks = [
     title: "Next-Step Pathways",
     text: "Players ready for more challenge are encouraged to explore tryouts and competitive opportunities.",
   },
+];
+
+const volleyballSkills = [
+  "Serving",
+  "Passing",
+  "Setting",
+  "Attacking",
+  "Game strategy",
+  "Team communication",
 ];
 
 export default function Home() {
@@ -134,6 +143,11 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <div className="skillsLearned" aria-label="Volleyball skills learned">
+          {volleyballSkills.map((skill) => (
+            <span key={skill}>{skill}</span>
+          ))}
+        </div>
       </section>
 
       <section className="section register" id="register">
@@ -149,6 +163,15 @@ export default function Home() {
             </p>
           </div>
           <div className="privacyBox">
+            <h3>Registration Details</h3>
+            <div className="feeList">
+              <p>
+                <strong>Early Bird:</strong> $325 when registered by August 21, 2026.
+              </p>
+              <p>
+                <strong>Fees:</strong> $350/player with an option for two instalments.
+              </p>
+            </div>
             <h3>Privacy Promise</h3>
             <p>
               Personal information collected through the form will be used only

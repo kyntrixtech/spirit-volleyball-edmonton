@@ -35,6 +35,16 @@ test("server-renders the volleyball development site", async () => {
   assert.match(html, /Upcoming beginner program for girls ages 10-12/i);
   assert.match(html, /https:\/\/forms\.cloud\.microsoft\/r\/vjf6Kp2SpV/i);
   assert.match(html, /volleyballgirls2026@gmail\.com/i);
+  assert.match(html, /Serving/i);
+  assert.match(html, /Passing/i);
+  assert.match(html, /Setting/i);
+  assert.match(html, /Attacking/i);
+  assert.match(html, /Game strategy/i);
+  assert.match(html, /Early Bird/i);
+  assert.match(html, /August 21, 2026/i);
+  assert.match(html, /\$325/i);
+  assert.match(html, /\$350\/player/i);
+  assert.match(html, /two instalments/i);
   assert.match(html, /Build skills, confidence, and friendships/i);
   assert.match(html, /Kyntrix Technology Solutions Ltd\./i);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);

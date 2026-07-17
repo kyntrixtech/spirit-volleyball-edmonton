@@ -324,6 +324,25 @@ h2 {
   font-size: 1.25rem;
 }
 
+.skillsLearned {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.skillsLearned span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 850;
+  box-shadow: 0 10px 24px rgba(20, 33, 61, 0.08);
+}
+
 .register {
   padding-bottom: 64px;
 }
@@ -359,6 +378,25 @@ h2 {
 
 .privacyBox p {
   color: var(--muted);
+}
+
+.feeList {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.feeList p {
+  margin: 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(255, 202, 69, 0.2);
+  color: var(--navy);
+  line-height: 1.45;
+}
+
+.feeList strong {
+  color: var(--coral-dark);
 }
 
 .full {
