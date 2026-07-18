@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://girls-volleyball-development.nancywang0904.chatgpt.site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Spirit Volleyball Edmonton | Ages 10-12",
   description:
     "A supportive beginner volleyball development program helping girls ages 10-12 build skills, confidence, teamwork, and friendships.",
@@ -42,11 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
