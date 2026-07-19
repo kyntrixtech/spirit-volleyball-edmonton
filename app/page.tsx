@@ -34,7 +34,10 @@ const volleyballSkills = [
 const openGymDetails = [
   { label: "Date", value: "August 15, 2026" },
   { label: "Time", value: "2:00-4:00 PM" },
-  { label: "Location", value: "EIC Gym" },
+  {
+    label: "Location",
+    value: "EIC Gym, 9538 107th Avenue NW, Edmonton, AB T5H 0T7",
+  },
   { label: "Registration", value: "No registration needed. Just show up." },
 ];
 
@@ -257,7 +260,8 @@ export default function Home() {
             <div className="feeList">
               <p>
                 <strong>Open Gym:</strong> August 15, 2026, from 2:00-4:00 PM
-                at EIC Gym. No registration needed. Just show up.
+                at EIC Gym, 9538 107th Avenue NW, Edmonton, AB T5H 0T7. No
+                registration needed. Just show up.
               </p>
               <p>
                 <strong>Early Bird:</strong> $325 when registered by August 21, 2026.
