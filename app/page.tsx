@@ -78,10 +78,10 @@ export default function Home() {
         <nav className="nav" aria-label="Primary navigation">
           <a className="brand" href="#top" aria-label="Spirit Volleyball Edmonton home">
             <Image
-              src="/spirit-volleyball-logo.png"
+              src="/spirit-volleyball-emblem.png"
               alt=""
-              width={64}
-              height={64}
+              width={96}
+              height={96}
               className="brandLogo"
             />
             <span>Spirit Volleyball Edmonton</span>

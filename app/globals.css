@@ -91,12 +91,13 @@ main {
 }
 
 .brandLogo {
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 12px 30px rgba(16, 36, 63, 0.15);
+  border-radius: 8px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 12px 30px rgba(16, 36, 63, 0.12);
 }
 
 .navLinks {
@@ -631,8 +632,8 @@ footer p {
   }
 
   .brandLogo {
-    width: 48px;
-    height: 48px;
+    width: 58px;
+    height: 58px;
   }
 
   .heroContent {
