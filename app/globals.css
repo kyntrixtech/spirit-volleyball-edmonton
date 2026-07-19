@@ -295,6 +295,44 @@ h1 {
   font-weight: 900;
 }
 
+.markSection {
+  padding-bottom: 0;
+}
+
+.markPanel {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+  gap: 34px;
+  align-items: center;
+  padding: 28px 34px;
+  border: 1px solid rgba(20, 33, 61, 0.12);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(31, 159, 163, 0.1)),
+    var(--white);
+  box-shadow: 0 18px 42px rgba(20, 33, 61, 0.08);
+}
+
+.markImage {
+  width: min(100%, 330px);
+  height: auto;
+  justify-self: center;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 28px rgba(20, 33, 61, 0.16));
+}
+
+.markPanel h2 {
+  margin-bottom: 16px;
+}
+
+.markPanel p:last-child {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1fr);
@@ -608,6 +646,7 @@ footer p {
 
   .introBand,
   .eventCard,
+  .markPanel,
   .split,
   .benefitGrid,
   .skillGrid,
@@ -626,6 +665,14 @@ footer p {
 
   .eventSection {
     padding-bottom: 0;
+  }
+
+  .markSection {
+    padding-bottom: 0;
+  }
+
+  .markPanel {
+    padding: 24px;
   }
 
   .split {

@@ -153,6 +153,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section markSection" aria-label="Spirit Volleyball Edmonton brand mark">
+        <div className="markPanel">
+          <Image
+            src="/spirit-volleyball-emblem.png"
+            alt="Spirit Volleyball Edmonton logo with volleyball and athlete figures"
+            width={520}
+            height={520}
+            className="markImage"
+          />
+          <div>
+            <p className="sectionKicker">Spirit Volleyball Edmonton</p>
+            <h2>Skill, teamwork, and passion in motion.</h2>
+            <p>
+              Our program gives girls a welcoming place to learn volleyball,
+              build confidence, and feel part of a supportive team.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section split" id="program">
         <div>
           <p className="sectionKicker">Why Volleyball</p>
