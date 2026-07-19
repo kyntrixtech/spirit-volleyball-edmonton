@@ -31,6 +31,13 @@ const volleyballSkills = [
   "Team communication",
 ];
 
+const openGymDetails = [
+  { label: "Date", value: "August 15, 2026" },
+  { label: "Time", value: "2:00-4:00 PM" },
+  { label: "Location", value: "EIC Gym" },
+  { label: "Registration", value: "No registration needed. Just show up." },
+];
+
 const coaches = [
   {
     name: "Esther",
@@ -119,6 +126,27 @@ export default function Home() {
         <div>
           <span className="stat">Supportive</span>
           <span className="statLabel">Learning environment</span>
+        </div>
+      </section>
+
+      <section className="section eventSection" aria-labelledby="open-gym-title">
+        <div className="eventCard">
+          <div>
+            <p className="sectionKicker">Open Gym</p>
+            <h2 id="open-gym-title">Come try volleyball with us.</h2>
+            <p>
+              Girls interested in Spirit Volleyball Edmonton can drop in for an
+              open gym session. No registration is needed for this event.
+            </p>
+          </div>
+          <dl className="eventDetails" aria-label="Open gym details">
+            {openGymDetails.map((detail) => (
+              <div key={detail.label}>
+                <dt>{detail.label}</dt>
+                <dd>{detail.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
@@ -227,6 +255,10 @@ export default function Home() {
           <div className="privacyBox">
             <h3>Registration Details</h3>
             <div className="feeList">
+              <p>
+                <strong>Open Gym:</strong> August 15, 2026, from 2:00-4:00 PM
+                at EIC Gym. No registration needed. Just show up.
+              </p>
               <p>
                 <strong>Early Bird:</strong> $325 when registered by August 21, 2026.
               </p>

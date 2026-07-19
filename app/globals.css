@@ -235,6 +235,66 @@ h1 {
   padding: 84px 0;
 }
 
+.eventSection {
+  padding-bottom: 0;
+}
+
+.eventCard {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+  gap: 28px;
+  align-items: stretch;
+  padding: 32px;
+  border: 1px solid rgba(31, 159, 163, 0.22);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(31, 159, 163, 0.12), rgba(255, 202, 69, 0.2)),
+    var(--white);
+  box-shadow: 0 20px 52px rgba(20, 33, 61, 0.1);
+}
+
+.eventCard h2 {
+  margin-bottom: 18px;
+}
+
+.eventCard p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.eventDetails {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.eventDetails div {
+  min-height: 112px;
+  padding: 18px;
+  border: 1px solid rgba(16, 36, 63, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.eventDetails dt {
+  margin-bottom: 8px;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.eventDetails dd {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.12rem;
+  line-height: 1.35;
+  font-weight: 900;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1fr);
@@ -547,6 +607,7 @@ footer p {
   }
 
   .introBand,
+  .eventCard,
   .split,
   .benefitGrid,
   .skillGrid,
@@ -563,6 +624,10 @@ footer p {
     padding: 62px 0;
   }
 
+  .eventSection {
+    padding-bottom: 0;
+  }
+
   .split {
     gap: 16px;
   }
@@ -577,6 +642,10 @@ footer p {
 
   .registerPanel {
     padding: 24px;
+  }
+
+  .eventDetails {
+    grid-template-columns: 1fr;
   }
 }
 
